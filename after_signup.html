@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="afterSignupStyle.css">
+</head>
+<body>
+    <header>
+        <img src="SparrowAcaLOGO.png" class="logo" alt="Sparrow Academy Logo">
+    </header>
+    <div class="container">
+       
+        <div class="center">
+            <h2>Personal Details</h2>
+            <form action="proceed1.html" method="POST">
+                <input type="text" name="student_name" placeholder="Student Name" required>
+                <input type="date" name="dob" placeholder="Date of Birth" required>
+                <input type="email" name="email" placeholder="Email ID" required>
+                <input type="tel" name="contact" placeholder="Mob No." required>
+                <input type="text" name="address" placeholder="Address" required>
+                Blood Group:
+                <select name="blood_group" required>
+                    <option value=""disabled selcted>Select Blood Group</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+                Upload Passport size photo:
+                <input type="file" name="photo" id="photo" accept="image/*" required>
+                <input type="text" name="fathers_Name" placeholder="Fathers Name" required>
+                <input type="email" name="fathers_email" placeholder="Father's Email" required>
+                <input type="tel" name="father_contact" placeholder="Father's Mob No." required>
+                <input type="text" name="mother_name" placeholder="Mother's Name" required>
+                <input type="email" name="mothers_email" placeholder="Mother's Email" required>
+                <input type="tel" name="mother_contact" placeholder="Mother's Mob No." required>
+                <button onclick="window.location.href='proceed1.html';">Proceed</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>

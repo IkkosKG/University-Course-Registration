@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="afterSignupStyle.css">
+</head>
+<body>
+    <header>
+        <img src="SparrowAcaLOGO.png" class="logo" alt="Sparrow Academy Logo">
+    </header>
+    <div class="container">
+       
+        <div class="center">
+            <h2>Academic Details</h2>
+            <form action="proceed2.html" method="POST">
+                Course Applying for:
+                <select name="course" required>
+                    <option value=""disabled selected>Select Course</option>
+                    <option value="ug.maths">B.Sc Mathematics</option>
+                    <option value="ug.chem">B.Sc Chemistry</option>
+                    <option value="ug.phy">B.Sc Physics</option>
+                    <option value="ug.bca">BCA</option>
+                    <option value="ug.computer">B.Sc Computer Science</option>
+                    <option value="pg.maths">M.Sc Mathematics</option>
+                    <option value="pg.chem">M.Sc Chemistry</option>
+                    <option value="pg.phy">M.Sc Physics</option>
+                    <option value="pg.mca">MCA</option>
+                    <option value="pg.aiml">M.Sc AI & ML</option>
+                </select>
+                Class X:
+                <input type="text" name="classX" placeholder="School Name" required>
+                <select name="school.board" required>
+                    <option value=""disabled selected>Select Board</option>
+                    <option value="cbse">CBSE</option>
+                    <option value="icse">ICSE</option>
+                    <option value="kerala.state">Kerala State Board</option>
+                    <option value="other.board">Other</option>
+                </select>
+                <input type="number" name="x.marks" min="1" max="100" placeholder="Marks in %" required>
+                Class XII:
+                <input type="text" name="classXII" placeholder="School Name" required>
+                <select name="12.board" required>
+                    <option value=""disabled selected>Select Board</option>
+                    <option value="cbse">CBSE</option>
+                    <option value="icse">ICSE</option>
+                    <option value="kerala.state">Kerala State Board</option>
+                    <option value="other.board">Other</option>
+                </select>
+                <input type="number" name="xii.marks" min="1" max="100" placeholder="Marks in %" required>
+                UnderGraduate (if you are applying for a PG Course):
+                <input type="text" name="ug.degree" placeholder="Degree Name">
+                <input type="text" name="college.name" placeholder="College or University Name">
+                <input type="text" name="uni.name" placeholder="University Name">
+                <input type="number" name="ug.marks" min="1" max="100" placeholder="Marks in %">
+                <button onclick="window.location.href='proceed2.html';">Proceed</button>
+
+
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
